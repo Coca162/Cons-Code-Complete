@@ -1,0 +1,20 @@
+[package]
+name = "focus"
+version = "0.1.0"
+authors = ["my name <my@email.address>"]
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15"
+tracing = "0.1.36"
+tracing-subscriber = "0.3.15"
+dashmap = "5.4.0"
+parse_duration = "2.1.1"
+
+[dependencies.tokio]
+versions = "1.21.1"
+features = ["macros", "signal", "rt-multi-thread"]
+
+[dependencies.serenity]
+versions = "0.11.5"
+features = ["cache", "framework", "standard_framework", "rustls_backend"]
